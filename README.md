@@ -19,7 +19,7 @@ ls -al ~/.ssh     // /home/git/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 
 </pre><br/>
 
 ### 2. 내 PC git 설치
-<br/><br/>
+<br/>
 
 ### 3. 내 PC에서 SSH Key 생성
 내 PC에서 만든 공개키를 git서버로 전송한다. <br/>
@@ -106,6 +106,6 @@ hint: ~/git-shell-commands should exist and have read and execute access.
 Connection to 192.168.59.2 closed.
 </pre><br/>
 
-
+<br/>
 https://morningame.tistory.com/27 <br/>
 <br/><br/>
