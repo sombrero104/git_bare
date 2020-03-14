@@ -1,4 +1,5 @@
 # Git 설치
+<br/>
 
 ### 1. 서버 git 설치 및 계정 생성
 <pre>
@@ -15,10 +16,10 @@ Enter file in which to save the key (/home/git/.ssh/id_rsa):	// 그냥 Enter
 Enter passphrase (empty for no passphrase):     // 그냥 Enter
 Enter same passphrase again:      // 그냥 Enter
 ls -al ~/.ssh     // /home/git/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 확인
-</pre>
+</pre><br/>
 
 ### 2. 내 PC git 설치
-<br/>
+<br/><br/>
 
 ### 3. 내 PC에서 SSH Key 생성
 내 PC에서 만든 공개키를 git서버로 전송한다. <br/>
@@ -32,13 +33,13 @@ Enter file in which to save the key (/home/git/.ssh/id_rsa):	// 그냥 Enter
 Enter passphrase (empty for no passphrase):				// 그냥 Enter
 Enter same passphrase again:								// 그냥 Enter
 ls -al ~/.ssh			// /home/[계정]/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 확인
-</pre>
+</pre><br/>
 
 ### 4. Public Key를 서버에 전송
 <pre>
 cd .ssh
 scp id_rsa.pub git@192.168.59.2:/home/git/
-</pre>
+</pre><br/>
 
 ### 5. 전송받은 Public Key 등록
 <pre>
@@ -49,12 +50,12 @@ cat id_rsa.pub >> .ssh/authorized_keys		// authorized_keys 파일로 저장
 rm -rf id_rsa.pub							// id_rsa.pub 삭제
 chmod 700 .ssh					// .ssh 디렉토리 권한 설정
 chmod 600 .ssh/authorized_keys	// authorized_keys 파일 권한 설정
-</pre>
+</pre><br/>
 
 ### 6. 이제 git 서버로 접속 테스트
 <pre>
 ssh git@192.168.59.2		// 암호를 물어보지 않는다면 성공
-</pre>
+</pre><br/>
 
 ### 7. Git Repository 생성
 <pre>
@@ -69,7 +70,7 @@ cd /git_repository/project.git	// 해당 디렉토리로 이동
 git —bare init				// git bare 저장소 생성
 cd		// git 계정의 홈디렉토리로 이동
 ln -s /git_repository/project.git	// /home/git/project.git 심볼릭 링크 생성(project.git -> /git-repository/project.git)
-</pre>
+</pre><br/>
 
 ### 8. 내 PC에서 최초의 clone, commit
 <pre>
@@ -85,7 +86,7 @@ git push origin master
 git status
 git log
 git pull	// 최신 내용으로 업데이트
-</pre>
+</pre><br/>
 
 ### 9. 보안을 위해서 git 계정의 쉘 기능 제한
 git 계정으로 접속한 유저들이 서버를 휘젓고 다니는 것을 막기 위해 쉘기능을 제한한다. <br/>
@@ -103,7 +104,7 @@ Last login: Sun Mar 15 00:32:02 2020 from 192.168.59.1
 fatal: Interactive git shell is not enabled.
 hint: ~/git-shell-commands should exist and have read and execute access.
 Connection to 192.168.59.2 closed.
-</pre>
+</pre><br/>
 
 
 https://morningame.tistory.com/27 <br/>
