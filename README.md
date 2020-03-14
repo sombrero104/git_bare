@@ -4,17 +4,17 @@
 <pre>
 yum install git
 adduser git   // git 계정 생성
-passwd git		// git 암호 설정
-su git			  // 생성한 계정으로 전환
-cd				    // 사용자 git의 홈 디렉토리로 이동
+passwd git	// git 암호 설정
+su git  // 생성한 계정으로 전환
+cd  // 사용자 git의 홈 디렉토리로 이동
 </pre>
 <pre>
-ssh-keygen -t rsa		                                          // rsa 암호화 방식으로 key 생성
+ssh-keygen -t rsa     // rsa 암호화 방식으로 key 생성
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/git/.ssh/id_rsa):	// 그냥 Enter
-Enter passphrase (empty for no passphrase):			            	// 그냥 Enter
-Enter same passphrase again:								                  // 그냥 Enter
-ls -al ~/.ssh			                  // /home/git/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 확인
+Enter passphrase (empty for no passphrase):     // 그냥 Enter
+Enter same passphrase again:      // 그냥 Enter
+ls -al ~/.ssh     // /home/git/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 확인
 </pre>
 
 ### 2. 내 PC git 설치
