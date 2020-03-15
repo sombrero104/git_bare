@@ -131,6 +131,16 @@ ls -al ~/.ssh			// /home/[계정]/.ssh에 id_rsa, id_rsa.pub이 생성되었는�
 cd .ssh
 scp id_rsa.pub git@192.168.59.2:/home/git/   // 위의 9번에서 보안을 위해 제한했던 쉘 기능을 다시 잠깐 풀어줘야 한다.
 </pre>
+<pre>
+cat id_rsa.pub >> .ssh/authorized_keys  // authorized_keys 파일에 anton의 공개키를 추가한다.
+</pre>
+authorized_keys 파일을 열어보면 아래처럼 anton(rey@localhost.localdomain)의 공개키가 추가된 것을 확인할 수 있다.
+<pre>
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXoODORtSt4OwoWvLTC7BPfkaVHb0A3/MIcLfajtZ6YVP5TweEvmzZCh2YN7/oif2WP09c65ljaC1QkcZAMwgenQZ6sEYTHsh/Qp+/cEXBPIHxWMlf/FKxZnO/B6Vrishtf2d4sfOZc1QGUQmz/mhCRD/aBqS5lt4HEG5WMEhT8I5Bojw5FD37rGNAXafaAzs9UGOdJIvn9PAEqlZUH0aAGCMMfj+Jz7g0quZcKf7/HhtWlMBMXv2BZmT+LwEd/aIGtJ+2C/Ggaf0WkQi3AbHKs4TfwpEnkj2U1EibGfdMOWoe4cnpbF0RJjxXCcPMGcIzulEIFSf6p3S/E02upJp7 sombrero104@sombrero104ui-MacBookPro.local
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDs7mF5RFinScgp9CJVqYlfDFFx8pLPHy0/iF0dNqfzYR0aGyFBWgOCqNsGP1DPWfPtoGgCxWK10Zn8Mytn/jHjY5YibZBcgGX+muSynER1whwpia7sBDkVopV4QwlLWwFJFNEr+fma0cprAPskISb2KZZiKxsMlKRLP9QOg1+50VAnEKzhCiuFCoeIu9jgybVQ5we0euO4QPLXvsfcqBC0TzZM3nbzSMMB7d5hoIvkAatte747/Z5/3bbfYhDBbA9CTyC77ZIviiTBfJZ95yaf1te6HwpmvT5SzcQYNB+A2sID9KccLQQY9nS4YyA5au78oHwx/aveT0zGqNgDyrqd rey@localhost.localdomain
+</pre>
+
+
 
 <br/>
 https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0 <br/>
