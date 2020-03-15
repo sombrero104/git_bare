@@ -111,8 +111,13 @@ https://morningame.tistory.com/27 <br/>
 <br/><br/>
 
 
+### * 다른 계정(anton) 추가해보기
 
-
+버추얼박스에 새로운 CentOS를 추가한 후, git을 설치한다.<br/>
+<pre>
+yum install -y net-tools
+yum install -y git
+</pre>
 
 
 <br/>
