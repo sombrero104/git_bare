@@ -118,7 +118,15 @@ https://morningame.tistory.com/27 <br/>
 yum install -y net-tools
 yum install -y git
 </pre>
-
+<pre>
+cd ~
+ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/git/.ssh/id_rsa):	// 그냥 Enter
+Enter passphrase (empty for no passphrase):				// 그냥 Enter
+Enter same passphrase again:								// 그냥 Enter
+ls -al ~/.ssh			// /home/[계정]/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 확인
+</pre><br/>
 
 <br/>
 https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0 <br/>
