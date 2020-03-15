@@ -4,6 +4,15 @@
 ### 1. 서버 git 설치 및 계정 생성
 <pre>
 yum install git
+
+git config --global user.name "git"     // git 사용자 설정을 해준다.
+git config --global user.email "glengleann@gmail.com"
+git config --global color.ui "auto"
+git config --global alias.st status   // git status 명령을 git st로 사용할 수 있게 할 수 있다.
+git config --global --list            // 사용자 설정 확인
+</pre>
+</pre>
+<pre>
 adduser git   // git 계정 생성
 passwd git	// git 암호 설정
 su git  // 생성한 계정으로 전환
@@ -19,7 +28,14 @@ ls -al ~/.ssh     // /home/git/.ssh에 id_rsa, id_rsa.pub이 생성되었는지 
 </pre><br/>
 
 ### 2. 내 PC git 설치
-<br/>
+git 사용자 설정을 해준다.
+<pre>
+git config --global user.name "rey"
+git config --global user.email "glengleann@gmail.com"
+git config --global color.ui "auto"
+git config --global alias.st status   // git status 명령을 git st로 사용할 수 있게 할 수 있다.
+git config --global --list            // 사용자 설정 확인
+</pre><br/>
 
 ### 3. 내 PC에서 SSH Key 생성
 내 PC에서 만든 공개키를 git서버로 전송한다. <br/>
