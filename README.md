@@ -40,7 +40,6 @@ git config --global --list            // 사용자 설정 확인
 ### 3. 내 PC에서 SSH Key 생성
 내 PC에서 만든 공개키를 git서버로 전송한다. <br/>
 암호없이 git서버(git 계정으로.. git@192.168.59.2)로 접속하기 위해서다. <br/>
-<br/>
 <pre>
 cd ~
 ssh-keygen -t rsa
