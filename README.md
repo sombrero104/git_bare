@@ -120,10 +120,8 @@ fatal: Interactive git shell is not enabled.
 hint: ~/git-shell-commands should exist and have read and execute access.
 Connection to 192.168.59.2 closed.
 </pre><br/>
-
-<br/>
 https://morningame.tistory.com/27 <br/>
-<br/><br/>
+<br/><br/><br/><br/>
 
 
 ### * 새로운 git 사용자(anton) 추가해보기
