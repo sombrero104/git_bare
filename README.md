@@ -111,7 +111,7 @@ https://morningame.tistory.com/27 <br/>
 <br/><br/>
 
 
-### * 새로운 git 사용자 'anton' 추가해보기
+### * 새로운 git 사용자(anton) 추가해보기
 
 버추얼박스에 새로운 CentOS를 추가한 후, git을 설치한다.<br/>
 <pre>
