@@ -118,6 +118,14 @@ https://morningame.tistory.com/27 <br/>
 yum install -y net-tools
 yum install -y git
 </pre>
+git 사용자 설정을 해준다.
+<pre>
+git config --global user.name "anton"
+git config --global user.email "glengleann@gmail.com"
+git config --global color.ui "auto"
+git config --global alias.st status   // git status 명령을 git st로 사용할 수 있게 할 수 있다.
+git config --global --list            // 사용자 설정 확인
+</pre>
 <pre>
 cd ~
 ssh-keygen -t rsa
