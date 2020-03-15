@@ -193,12 +193,8 @@ https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%
 <br/><br/><br/><br/>
 
 
-### * 새로운 브랜치(develop) 생성
+### * 새로운 브랜치(release) 생성
 remote 서버가 아닌 사용자 로컬에서 브랜치를 생성해서 remote 서버에 올려야 한다.
-<pre>
-git checkout -b develop     // develop 브랜치 생성
-git push origin develop     // remote 서버에 push
-</pre>
 <pre>
 git branch      // 브랜치 목록 확인
 git branch -r   // remote 서버의 브랜치 목록 확인
