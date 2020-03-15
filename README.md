@@ -140,7 +140,10 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXoODORtSt4OwoWvLTC7BPfkaVHb0A3/MIcLfajtZ6
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDs7mF5RFinScgp9CJVqYlfDFFx8pLPHy0/iF0dNqfzYR0aGyFBWgOCqNsGP1DPWfPtoGgCxWK10Zn8Mytn/jHjY5YibZBcgGX+muSynER1whwpia7sBDkVopV4QwlLWwFJFNEr+fma0cprAPskISb2KZZiKxsMlKRLP9QOg1+50VAnEKzhCiuFCoeIu9jgybVQ5we0euO4QPLXvsfcqBC0TzZM3nbzSMMB7d5hoIvkAatte747/Z5/3bbfYhDBbA9CTyC77ZIviiTBfJZ95yaf1te6HwpmvT5SzcQYNB+A2sID9KccLQQY9nS4YyA5au78oHwx/aveT0zGqNgDyrqd rey@localhost.localdomain
 </pre>
 프로젝트를 clone할 디렉토리를 만들고.. (/home/rey/study_2020/git_study/) <br/>
-
+<pre>
+cd /home/rey/study_2020/git_study/
+git clone git@192.168.59.2:project.git
+</pre>
 
 <br/>
 https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0 <br/>
