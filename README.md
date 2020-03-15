@@ -152,6 +152,28 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDs7mF5RFinScgp9CJVqYlfDFFx8pLPHy0/iF0dNqfz
 cd /home/rey/study_2020/git_study/
 git clone git@192.168.59.2:project.git
 </pre>
+파일 내용을 수정 후 커밋하면..
+<pre>
+vi readme.txt
+git add readme.txt
+git commit -m '.'
+git push origin master
+</pre>
+anton이 커밋한 로그를 확인할 수 있다.
+<pre>
+[rey@localhost project]$ git log
+commit 53910f291217a257db7c0f70ddb9bce0f81dd738
+Author: anton <glengleann@gmail.com>
+Date:   Sun Mar 15 11:52:33 2020 +0900
+
+    .
+
+commit 5c52a3c923973b71efce92ec401b7261a05bc32f
+Author: rey <glengleann@gmail.com>
+Date:   Sun Mar 15 11:08:46 2020 +0900
+
+...
+</pre>
 
 <br/>
 https://git-scm.com/book/ko/v2/Git-%EC%84%9C%EB%B2%84-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0 <br/>
