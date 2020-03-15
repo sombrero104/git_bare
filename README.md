@@ -204,6 +204,21 @@ git branch      // 브랜치 목록 확인
 git branch -r   // remote 서버의 브랜치 목록 확인
 git branch -a   // 사용자 로컬의 브랜치 목록 확인
 </pre>
+<pre>
+// (1) 사용자 rey가 release 브랜치를 만들어서 remote에 push 함.
+git checkout -b release     // release 브랜치를 생성 후 현재 HEAD를 release로 변경
+git push origin release     // remote에 브랜치 반영
+
+// (2) 사용자 anton이 remote에서 release 브랜치를 가져옴.
+git fetch       // remote 정보를 업데이트
+git checkout -t origin/release  // remote에 있는 release 브랜치 가져온 후 현재 HEAD를 release로 변경
+</pre>
+<br/><br/>
+
+### * 이 외 Git 명령어
+<pre>
+git branch -d [브랜치명]   // 브랜치 삭제
+</pre>
 <br/><br/>
 
 
